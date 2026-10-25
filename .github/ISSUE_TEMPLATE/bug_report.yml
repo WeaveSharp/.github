@@ -1,0 +1,57 @@
+name: Bug report
+description: Something in a WeaveSharp release does not work as its documentation says.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please don't include source code, file paths or values you can't share publicly. Report security problems privately instead, as the security policy describes.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did and what WeaveSharp did, including any message it showed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest C# project or snippet and the steps that show the problem.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: WeaveSharp version
+      description: The extension's version, as your editor's extensions view shows it.
+    validations:
+      required: true
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      options:
+        - Visual Studio Code
+        - JetBrains Rider
+        - Visual Studio
+        - Another VS Code-compatible editor
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - A remote, container or WSL workspace
+    validations:
+      required: true

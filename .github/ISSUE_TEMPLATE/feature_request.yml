@@ -1,0 +1,22 @@
+name: Feature request
+description: Ask for an outcome WeaveSharp does not give you today.
+type: Feature
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: The outcome you want
+      description: What you want to be able to do, in your own words.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Your use case
+      description: The C# work you are doing when you need it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
